@@ -45,6 +45,13 @@ The WhatsApp chat button (bottom right) is an Elfsight widget, still loaded from
   loader) and Elfsight still load from their own CDNs.
 - All paths are root-relative (`/css/...`, `/images/...`) so the 404 page works at any URL.
 
+## Domain
+
+The site is at https://www.langwadeplumbingandheating.co.uk (Netlify site `seanlangwadeplumbing.netlify.app`).
+DNS is at 123-reg: A `@` 75.2.60.5 and CNAME `www` to `seanlangwadeplumbing.netlify.app`. The MX records
+(`mx0`/`mx1.123-reg.co.uk`) are for email, so leave them as they are. `sitemap.xml`, `robots.txt` and the canonical
+link in `index.html` use the `www` address.
+
 ## Rules for changes
 
 - Keep the Webflow class names and `data-w-id` / `data-wf-page` / `data-wf-site` attributes. `js/webflow.js` uses

@@ -1,3 +1,5 @@
 # Sean Langwade Plumbing & Heating
 User-agent: *
 Allow: /
+
+Sitemap: https://www.langwadeplumbingandheating.co.uk/sitemap.xml
