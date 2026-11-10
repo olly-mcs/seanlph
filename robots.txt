@@ -1,0 +1,3 @@
+# Sean Langwade Plumbing & Heating
+User-agent: *
+Allow: /

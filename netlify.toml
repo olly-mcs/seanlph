@@ -1,0 +1,39 @@
+# Plain static site (Webflow export): no build step, served from the repo root.
+[build]
+  publish = "."
+
+# Webflow's unused ecommerce template pages were left out in the move; their URLs go to the homepage.
+[[redirects]]
+  from = "/checkout"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/order-confirmation"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/paypal-checkout"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/product/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/category/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
